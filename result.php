@@ -27,7 +27,7 @@ echo "性別:".$sex."<br>";
 if(isset($_POST["hoddy"])){
     echo "趣味は".$hody."です！";
 }  else{
-    echo "趣味はありません。";
+    echo "趣味はありませんよ。";
 }
 
 
