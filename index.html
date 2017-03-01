@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>プロフィール</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- formタグを使って
+        ・名前     => typeはtext
+        ・パスワード => typeはpassword
+        ・都道府県  => selectタグを導入
+        ・性別     => radioボタンを導入
+        ・趣味   => checkboxを導入
+         を送るフォームを作ろう！
+    -->
+    <form action="result.php" method="post">
+        名前:<input type="text" name="name"><br><br>
+        password:<input type="password" name="pass"><br><br>
+        <label>都道府県:</label>
+            <select name="address">
+                <option value="東京" checkted>東京</option>
+                <option value="神奈川" checkted>神奈川</option>
+                <option value="千葉" checkted>千葉</option>
+                <option value="埼玉" checkted>埼玉</option>
+                <option value="栃木" checkted>栃木</option>
+                <option value="群馬" checkted>群馬</option>
+            </select><br><br>
+        性別:
+        <input type="radio" name="sex" value="男">男</input>
+        <input type="radio" name="sex" value="女">女</input><br><br>
+        趣味:<br>
+        <input type="checkbox" name="hobby[]" value="読書">読書</input><br>
+        <input type="checkbox" name="hoddy[]" value="映画鑑賞">映画鑑賞</input><br>
+        <input type="checkbox" name="hoddy[]" value="プログラミング">プログラミング</input><br><br>
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
